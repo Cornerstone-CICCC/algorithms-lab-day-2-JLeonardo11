@@ -2,4 +2,18 @@
 // with one number missing and returns the missing number.
 // Example: findMissingNumber([1, 2, 4, 5]) should return 3.
 
+const findMissingNumber = function (numbArr){
+    let missingnumb = 0
+    let counter = [3]
+    for (i = 0; i < numbArr; i++){
+        counter ++
+        for (numb of numbArr){
+            if (!counter.includes(numbArray))
+                missingnumb.push(numb);
+
+        }
+    }
+    return missingnumb
+}
+
 console.log(findMissingNumber([1, 2, 4, 5])); // Expected output: 3

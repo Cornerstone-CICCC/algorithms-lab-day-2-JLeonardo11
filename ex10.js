@@ -2,4 +2,10 @@
 // with words separated by spaces or underscores, and returns the string in camelCase format.
 // Example: convertToCamelCase("hello_world") should return "helloWorld".
 
+const convertToCamelCase = function (greeting){
+    greeting = greeting.split("_").join("")
+     return greeting
+}
+
+
 console.log(convertToCamelCase("hello_world")); // Expected output: "helloWorld"
